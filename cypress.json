@@ -1,0 +1,7 @@
+{
+    "testFiles": "**/*.{feature,features}",
+    "watchForFileChanges" : false,
+    "chromeWebSecurity": false,
+    "viewportWidth": 1500,
+    "viewportHeight": 1500
+}
