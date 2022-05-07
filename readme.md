@@ -4,3 +4,4 @@
 
 Recorded videos LOC: cypress/videos
 Error screenshots LOC: cypress/screenshots
+Swag Labs bug report LOC: Swag-labs-bug-report.xlsx
