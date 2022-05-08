@@ -8,7 +8,7 @@ Error screenshots LOC: cypress/screenshots\
 Swag Labs bug report LOC: Swag-labs-bug-report.xlsx
 
 
-Solution used for this task:\
+Solution used for this task:
 1. Cypess team dashboard
 2. Page object model
 3. Cucumber(BDD) + Cypress
