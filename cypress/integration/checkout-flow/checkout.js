@@ -1,4 +1,4 @@
-import {And, When} from "cypress-cucumber-preprocessor/steps";
+import { And, When } from "cypress-cucumber-preprocessor/steps";
 import * as yourCartPage from "../../support/pageObjects/yourCartPage";
 import * as productPage from "../../support/pageObjects/productPage";
 import * as checkoutPages from "../../support/pageObjects/checkoutPages";
@@ -7,7 +7,7 @@ When('I add {string} into the cart', (itemName) => {
     cy.addToCart(itemName);
 })
 
-And('I checkout the cart with given user\'s information', () => {
+And('I checkout the cart with given user', () => {
     productPage.getCartLink().click();
     yourCartPage.getCheckoutButton().click();
 
@@ -18,10 +18,9 @@ And('I checkout the cart with given user\'s information', () => {
         });
 
     checkoutPages.getContinueButton().click();
-
 })
 
-When('I confirm the cart item from the checkout overview page', () => {
-    cy.get('.title').should('have.text','Checkout: Overview');
+When('I confirm the cart item from the checkout overview page and click finish button', () => {
+    cy.get('.title').should('have.text', 'Checkout: Overview');
     checkoutPages.getFinishButton().click();
 })

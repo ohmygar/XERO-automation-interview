@@ -1,4 +1,4 @@
-import {Given, Then} from "cypress-cucumber-preprocessor/steps";
+import { Given, Then } from "cypress-cucumber-preprocessor/steps";
 import * as loginPage from "../../support/pageObjects/loginPage";
 
 const URL = 'https://www.saucedemo.com'
