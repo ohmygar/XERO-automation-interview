@@ -6,7 +6,7 @@ export function getCartBadge() {
 }
 
 export function getCartLink() {
-    return cy.get(CART_LINK);
+    return cy.get(CART_LINK, {timeout: 5000});
 }
 
 export function checkout(itemName) {
